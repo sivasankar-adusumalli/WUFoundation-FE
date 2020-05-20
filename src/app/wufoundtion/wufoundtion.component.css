@@ -1,0 +1,643 @@
+@CHARSET "UTF-8";
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+html.ie .clearfix {
+	zoom: 1;     /* triggers hasLayout */
+}
+
+form.dp * {
+	margin: 0px;
+	padding: 0px;
+}
+
+form.dp h1 {
+	margin: 10px 0 15px;
+}
+
+form.dp p {
+	margin: 5px 0 8px;
+}
+
+form.dp div {
+	
+}
+
+form.test-account {
+	background-color: #ffdddd;
+}
+form.dp fieldset, #dp_processing_container.single fieldset {
+	margin: 20px 0px;
+	padding: 10px 5px;
+	border: 2px solid #eeeeee;
+	background-color: #fcfcfc;
+}
+
+form.dp legend, #dp_processing_container.single legend {
+	padding: 0px 5px 0px 5px;
+	margin: 0px 5px 0px 5px; 
+	display: block;
+}
+
+form.dp label {
+	display: block;
+	float: left;
+	clear: left;
+	
+	width: 200px;
+	height: auto;
+	padding: 5px 10px;
+	
+	font-weight: normal;
+	font-size: 15px;
+	color: #555555;
+	
+}
+
+.card_images_spacer {
+    width:200px;
+    height:30px;
+}
+
+form.dp .card_images {
+    float:left;
+    clear:right;
+    margin-bottom:10px;
+}
+
+form.dp .card_images img {
+    display:inline;
+}
+
+
+form.dp input, form.dp select, form.dp textarea {
+	margin-bottom: 10px;
+}
+
+form.dp input[type=text] {
+	display: block;
+	float: left;	
+	clear: right;
+	width: 200px;
+	padding: 4px;
+	
+	border: 2px solid #dddddd;
+}
+
+form.dp select {
+	display: block;
+	float: left;
+	clear: right;
+	position: relative;
+	top: 2px;
+	
+	
+	width: 213px;
+	padding: 4px;
+	
+}
+
+form.dp select.expirationdatemm {
+	margin-right: 10px;
+}
+
+form.dp select.expirationdatemm,  form.dp select.expirationdateyy {
+	width: 101px;
+	
+}
+
+form.dp option {
+	
+
+}
+
+form.dp div.dp_checkbox {
+	
+}
+
+form.dp input[type=checkbox] {
+	display: block;
+	float: left;
+	clear: left;
+	
+	width: auto;
+	padding: 0px;
+	margin: 5px 10px 0px 220px;
+	text-align: right;
+}
+
+form.dp div.dp_checkbox label, form.dp label.dp_amount_sum {
+	clear: none;
+	padding: 0px;
+	width: auto;
+	margin-top: 1px;
+}
+
+form.dp div.dp-radiobuttons {
+	float: left;	
+	padding: 4px 0px;
+	margin-bottom: 10px;
+}
+
+form.dp div.dp-radiobuttons .radiogroup label {
+	clear: none;
+	padding: 0px;
+	width: auto;
+	margin: 0px 20px 0px 0px;
+	position: inline;
+}
+
+form.dp div.radiogroup span.other label.other:before {
+	content: "$";
+	float: left;
+	margin-right: 10px;
+}
+
+form.dp input[type=radio] {
+	float: left;
+	clear: none;
+	width: auto;
+	margin: 2px 5px 0px 0px;
+	
+}
+
+form.dp label.dp_amount_sum, form.dp label.dp_amount_sum_label { 
+	font-weight: bold;
+}
+
+form.dp input[type=submit] {
+	border: 1px solid #aaaaaa;
+	padding: 5px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
+	margin: 10px 0px 0px 0px;
+}
+
+form.dp label.textarea {
+	width: auto;
+	clear: both;
+	float: none;	
+}
+
+form.dp textarea {
+	display: block;
+	width: 411px;
+	float: none;
+	border: 2px solid #DDDDDD;
+	padding: 4px;
+	font-family: Lucida Grande, sans-serif;
+	font-size: 11px;
+}
+
+/**
+  * form_payment block
+*/
+
+form.dp ul.dp_flipswitch {
+	margin-top: 10px;
+}
+
+form.dp button.dp_processing {
+	border: 2px solid #eeeeee;
+	border-right: none;
+	border-bottom: none;
+	padding: 5px;
+}
+
+form.dp ul.dp_flipswitch button.selected {
+	border-bottom: none;
+	border-bottom: 1px solid #fcfcfc !important;
+	background: #fcfcfc;
+}
+
+form.dp ul.dp_flipswitch {
+	list-style: none;
+	padding: 0 !important;
+	border-right: 2px solid #eeeeee;
+	width: auto;
+	float: left;
+	clear: both;
+	margin: 0px !important;
+	position: relative;
+	top: 2px;
+}
+
+form.dp ul.dp_flipswitch li {
+	padding: 0 !important;
+	margin: 0 !important;
+	float: left;
+}
+
+form.dp button.dp_processing:hover {
+	cursor: pointer;
+	background-color: #f79323;
+}
+
+#dp_processing_container {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: #fcfcfc;
+}
+
+#dp_processing_container.single  {
+	background-color: transparent;
+}
+
+#dp_processing_container.single fieldset, #dp_processing_container.multiple fieldset {
+	margin: 0px 0px 10px;
+}
+
+#dp_processing_container.single {
+}
+
+#dp_processing_container.multiple {
+/*	margin: 0px 0px 20px;
+	padding: 10px 5px;
+	border: 2px solid #eeeeee;
+	background-color: #fcfcfc; */
+}
+
+#dp_processing_container.multiple fieldset {
+}
+
+#dp_processing_container.multiple legend {
+	display: none;
+}
+
+/* Std Gradient */
+
+form.dp input[type=submit] {
+	background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.16, #FFFFFF),
+	    color-stop(0.58, #DDDDDD)
+	);
+	background-image: -moz-linear-gradient(
+	    center top,
+	    #FFFFFF 16%,
+	    #DDDDDD 58%
+	);
+}
+
+.disabled {
+	color: #cccccc;
+}
+
+/**
+	Errors
+	*/
+	
+span.error {
+	display: block;
+	float: left;
+	font-size: 12px;
+	max-width: 140px;
+	padding: 0px 0px 0px 10px;
+}
+
+ul.errorlist, div.error {
+	padding: 15px 15px 15px 30px;
+	margin: 10px 0px;
+	border: 1px solid red;
+	width: auto;
+	border: 2px solid #eeaabb;
+}
+div.dp-radiobuttons.error,
+div.radiogroup.error 
+{
+	border: none;
+} 
+
+li.error {
+	font-size: 14px;
+	padding: 0px 0px 4px 0px;
+}
+
+span.error,
+li.error,
+input.error {
+	color: #cc6666;
+}
+
+input.error,
+ul.errorlist  
+{
+	background-color: #ffeeee;
+}
+
+
+div.clear {
+	clear: both;
+}
+
+
+
+
+
+/* Fixes on top of above */
+
+/* General fixes */
+
+form.dp fieldset, #dp_processing_container.single fieldset {
+	padding: 10px 15px;
+}
+
+form.dp label, form.dp legend, #dp_processing_container.single legend {
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+form.dp label {
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+	line-height: 30px;
+}
+
+
+
+/* Payment container width fix */
+
+div#payment_container {
+	width: auto;
+}
+
+div#dp_processing_container.multiple {
+	border: 2px solid #EEEEEE;
+}
+
+div#dp_processing_container fieldset {
+	border: none;
+}
+
+#dp_processing_container {
+	float: none;
+}
+
+
+
+/* Radiobuttons fixes */
+
+form.dp div.dp-radiobuttons label {
+	margin: 0px;
+	padding: 0px 10px 0px 0px;
+}
+	
+form.dp div.dp-radiobuttons label.transactionamount_other {
+	margin-right: 0px;
+}
+
+form.dp div.dp-radiobuttons {
+	clear: none;
+	float: none;
+	display:block;
+	/*position: static;*/
+}
+
+form.dp input[type="radio"] {
+	margin-top: 9px;
+	width: 14px;
+}
+
+form.dp div.radiogroup.vertical span.cont {
+	display: block;
+	position: inline;
+}
+
+
+/* Radiobuttons vertical */
+
+form.dp div.dp-radiobuttons.vertical div.radiogroup {
+	float:left;
+}
+
+form.dp div.dp-radiobuttons label.radiogroup {
+	width: 200px;
+}
+
+form.dp div.dp-radiobuttons input[type="text"].vertical {
+	width: 70px;
+}
+
+form.dp input[type="radio"].vertical {
+	clear:left;
+}
+
+form.dp div.dp-radiobuttons.vertical label.radio,
+form.dp div.dp-radiobuttons.vertical label.radiogroup,
+form.dp div.dp-radiobuttons.vertical label.transactionamount_other {
+	line-height: 30px;
+}
+
+form.dp div.dp-radiobuttons.vertical input[type="radio"] {
+	margin-top: 9px;
+}
+
+form.dp div.radiogroup.vertical span.cont {
+	display: block;
+	position: inline;
+}
+
+form.dp div.radiogroup.vertical span.cont.other {
+	display: inline;
+}
+
+/* Radiobuttons inline */
+
+form.dp div.dp-radiobuttons.inline label.radiogroup {
+	width: 200px;
+}
+
+form.dp div.dp-radiobuttons input[type="text"].inline {
+	width: 70px;
+}
+
+form.dp div.dp-radiobuttons.inline label.radio,
+form.dp div.dp-radiobuttons.inline label.radiogroup,
+form.dp div.dp-radiobuttons.inline label.transactionamount_other {
+	line-height: 30px;
+}
+
+form.dp div.dp-radiobuttons.inline input[type="radio"] {
+	margin-top: 9px;
+}
+
+
+
+/* Checkbox fixes */
+form.dp div.dp_checkbox input[type="checkbox"] {
+	margin-left: 210px;
+}
+
+form.dp div.dp_checkbox input.inline[type="checkbox"] {
+    clear: none;
+    margin: 8px 5px 5px 0;
+}
+
+form.dp div.dp_checkbox label {
+	margin: 0px;
+}
+
+form.dp div.dp_checkbox label.inline {
+	padding-right: 15px;
+	max-width: 90%;
+}
+
+form.dp input[type="checkbox"] {
+	margin-top: 8px;
+}
+
+
+/* row-clear */
+
+form.dp input.row-clear {
+	margin-left: 0px !important;
+	margin: 8px 5px 5px 0;
+}
+
+form.dp div.dp_checkbox.row-clear {
+	clear: both;
+	float: none;
+}
+	 
+form.dp label.row-clear,
+form.dp span.row-clear {
+	width: 99%;
+	clear: both;
+	display: block;
+	float: none;
+}
+
+/* radiobutton row-clear */
+form.dp span.row-clear input[type="radio"] {
+	clear: left;
+	
+}
+form.dp span.cont.row-clear label {
+	clear: right;
+	width: 99%;
+	padding-left: 20px;
+	padding-right: 0px;
+}
+
+/* select row-clear */
+form.dp select.row-clear {
+	clear: both;
+	float: none;
+}
+
+/* Tooltips */
+
+form.dp .tooltip_container {
+	width: 403px;	
+	
+}
+
+form.dp .tooltip {
+	display:none;
+	background: #fff;
+	font-size:12px;
+	padding:15px;
+	color:#333;	
+	opacity: 0.8;
+	font-family: Lucida Grande, helvetica, arial, sans-serif;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+   line-height: 1.2em;
+}
+
+form.dp .tooltip p {
+	padding: 0px 0px 8px;
+}
+
+/* Generic style classes */
+form.dp .long {
+	width: 400px;
+}
+form.dp .short {
+	width: 75px !important;
+}
+
+/**
+	ERRORS AND ALERTS
+**/
+
+form.dp .alert, form.dp .notice, form.dp .success, form.dp .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+form.dp .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+form.dp .notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+form.dp .success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+form.dp .info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+form.dp .alert a {color:#8a1f11;}
+form.dp .notice a {color:#514721;}
+form.dp .success a {color:#264409;}
+form.dp .info a {color:#205791;}
+
+/**
+	SOCIAL MEDIA
+**/
+.sharing {
+	border: 1px solid #DDDDDD;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	background: #fcfcfc;
+	
+background-image: linear-gradient(left , rgb(252,252,252) 36%, rgb(238,238,238) 84%);
+background-image: -o-linear-gradient(left , rgb(252,252,252) 36%, rgb(238,238,238) 84%);
+background-image: -moz-linear-gradient(left , rgb(252,252,252) 36%, rgb(238,238,238) 84%);
+background-image: -webkit-linear-gradient(left , rgb(252,252,252) 36%, rgb(238,238,238) 84%);
+background-image: -ms-linear-gradient(left , rgb(252,252,252) 36%, rgb(238,238,238) 84%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.36, rgb(252,252,252)),
+	color-stop(0.84, rgb(238,238,238))
+);
+}
+.sharing h3 {
+	color: #bbb;
+	float: left;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 25px 0 0;
+	text-transform: uppercase;
+	width: 200px;
+}
+.social_control {
+	float: left;
+	margin: 0 15px 0 0;
+}
+.sharing .image {
+	border: 1px solid #DDDDDD;
+	float: right;
+	height: 80px;
+	overflow: hidden;
+}
+.sharing .image img {
+	height: 80px;
+}
+.facebook_like .fb-like {
+	margin-top: 0px;
+}
+	
+.sslBadge {
+	width: 100px;
+}

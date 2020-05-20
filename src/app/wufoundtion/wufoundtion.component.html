@@ -1,0 +1,482 @@
+<!--<div class='container'>
+<form>
+    <fieldset>
+        <div>
+            <h1>{{message}}</h1>
+        </div>
+        <div class='form-group'>
+            <label for="Name">Name:</label>
+            <input required type="text" [(ngModel)]="user.name"  name="name" id="name"
+            placeholder="Enter your name"/>
+        </div>
+<input type="submit" name="Submit" value="WUFoundation" (click)="displayNow(user.name)">
+<input type="submit" name="SubmitObj" value="WUFoundation Obj" (click)="displayObject()">
+    </fieldset>
+</form>
+</div>-->
+
+<!DOCTYPE html>
+<html class="" itemscope itemtype="http://schema.org/Organization" >
+<head>
+	<meta property="og:site_name" content="" />
+	<meta itemprop="name" content="" />
+	<meta property="og:description" content="" />
+	<meta itemprop="description" content="" />
+	<meta itemprop="image" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:email" content="WUFoundation@westernunion.com" />
+	<meta property="og:phone_number" content="+1 720 332 6606" />
+	<meta property="og:type" content="non-profit" />
+	<meta property="og:title" content="Western Union Foundation | DonationPay" />
+	<title>Western Union Foundation | DonationPay</title>
+	
+	<!--<link href="https://secure.donationpay.org/static/v1.2/css/form.css" type="text/css" rel="stylesheet" />-->
+	
+		</head>
+
+
+
+	<header class="full-width-container header-full-container"
+		role="banner">
+				<div class="grid-content-container">
+			
+		</div>
+	</header>
+
+	<main class="full-width-container" role="main">
+
+	<section class="flexible-block-container -text">
+		<div class="grid-content-container">
+			<div class="content-container content-text-block">
+<!-- DonationPay start -->
+
+
+
+<form action="" method="post" class="dp ">
+	<input name="dp_processing" id="dp_processing" type="hidden" value="CreditCard"/>
+	
+<h2> Response From Spring Boot:::</h2>	
+Name: {{ user.name }} <br />
+Email: {{ user.email }} <br />
+Card Number: {{ user.card }} <br />
+
+	<fieldset class="billing">
+		<legend>Billing Information</legend>
+				<div class="form_row">
+		<label for="BillingNameFirst" class=" billingnamefirst">First Name:</label>
+		<input name="BillingNameFirst" id="BillingNameFirst" type="text" value="" [(ngModel)]="user.first" class=" billingnamefirst" autocomplete="off" />		</div>
+				<div class="form_row">
+		<label for="BillingNameLast" class=" billingnamelast">Last Name:</label>
+		<input name="BillingNameLast" id="BillingNameLast" type="text" value="" [(ngModel)]="user.last" class=" billingnamelast" autocomplete="off" />		</div>
+				<div class="form_row">
+		<label for="BillingAddress" class=" billingaddress">Address:</label>
+		<input name="BillingAddress" id="BillingAddress" type="text" value="" [(ngModel)]="user.address" class=" billingaddress" autocomplete="off" />		</div>
+				<div class="form_row">
+		<label for="BillingCity" class=" billingcity">City:</label>
+		<input name="BillingCity" id="BillingCity" type="text" value="" [(ngModel)]="user.city" class=" billingcity" autocomplete="off" />		</div>
+				<div class="form_row">
+		
+		<div id="country_province">
+		<div id="province"><label for="BillingState" class=" billingstate">State:</label>
+		<input name="BillingState" id="BillingState" type="text" value="" [(ngModel)]="user.state" class=" billingstate" autocomplete="off" /></div><div id="country"><label for="BillingCountry" class=" billingcountry billingcountry">Country:</label>
+		<div class="styled-select"><select name="BillingCountry" id="BillingCountry" [(ngModel)]="user.country" class=" billingcountry">
+					<option value="AF" >Afghanistan</option>
+					<option value="AX" >Åland Islands</option>
+					<option value="AL" >Albania</option>
+					<option value="DZ" >Algeria</option>
+					<option value="AS" >American Samoa</option>
+					<option value="AD" >Andorra</option>
+					<option value="AO" >Angola</option>
+					<option value="AI" >Anguilla</option>
+					<option value="AQ" >Antarctica</option>
+					<option value="AG" >Antigua And Barbuda</option>
+					<option value="AR" >Argentina</option>
+					<option value="AM" >Armenia</option>
+					<option value="AW" >Aruba</option>
+					<option value="AU" >Australia</option>
+					<option value="AT" >Austria</option>
+					<option value="AZ" >Azerbaijan</option>
+					<option value="BS" >Bahamas</option>
+					<option value="BH" >Bahrain</option>
+					<option value="BD" >Bangladesh</option>
+					<option value="BB" >Barbados</option>
+					<option value="BY" >Belarus</option>
+					<option value="BE" >Belgium</option>
+					<option value="BZ" >Belize</option>
+					<option value="BJ" >Benin</option>
+					<option value="BM" >Bermuda</option>
+					<option value="BT" >Bhutan</option>
+					<option value="BO" >Bolivia, Plurinational State Of</option>
+					<option value="BQ" >Bonaire, Sint Eustatius And Saba</option>
+					<option value="BA" >Bosnia And Herzegovina</option>
+					<option value="BW" >Botswana</option>
+					<option value="BV" >Bouvet Island</option>
+					<option value="BR" >Brazil</option>
+					<option value="IO" >British Indian Ocean Territory</option>
+					<option value="BN" >Brunei Darussalam</option>
+					<option value="BG" >Bulgaria</option>
+					<option value="BF" >Burkina Faso</option>
+					<option value="BI" >Burundi</option>
+					<option value="KH" >Cambodia</option>
+					<option value="CM" >Cameroon</option>
+					<option value="CA" >Canada</option>
+					<option value="CV" >Cape Verde</option>
+					<option value="KY" >Cayman Islands</option>
+					<option value="CF" >Central African Republic</option>
+					<option value="TD" >Chad</option>
+					<option value="CL" >Chile</option>
+					<option value="CN" >China</option>
+					<option value="CX" >Christmas Island</option>
+					<option value="CC" >Cocos (Keeling) Islands</option>
+					<option value="CO" >Colombia</option>
+					<option value="KM" >Comoros</option>
+					<option value="CG" >Congo</option>
+					<option value="CD" >Congo, The Democratic Republic Of The</option>
+					<option value="CK" >Cook Islands</option>
+					<option value="CR" >Costa Rica</option>
+					<option value="CI" >Côte D’ivoire</option>
+					<option value="HR" >Croatia</option>
+					<option value="CU" >Cuba</option>
+					<option value="CW" >Curaçao</option>
+					<option value="CY" >Cyprus</option>
+					<option value="CZ" >Czech Republic</option>
+					<option value="DK" >Denmark</option>
+					<option value="DJ" >Djibouti</option>
+					<option value="DM" >Dominica</option>
+					<option value="DO" >Dominican Republic</option>
+					<option value="EC" >Ecuador</option>
+					<option value="EG" >Egypt</option>
+					<option value="SV" >El Salvador</option>
+					<option value="GQ" >Equatorial Guinea</option>
+					<option value="ER" >Eritrea</option>
+					<option value="EE" >Estonia</option>
+					<option value="ET" >Ethiopia</option>
+					<option value="FK" >Falkland Islands (Malvinas)</option>
+					<option value="FO" >Faroe Islands</option>
+					<option value="FJ" >Fiji</option>
+					<option value="FI" >Finland</option>
+					<option value="FR" >France</option>
+					<option value="GF" >French Guiana</option>
+					<option value="PF" >French Polynesia</option>
+					<option value="TF" >French Southern Territories</option>
+					<option value="GA" >Gabon</option>
+					<option value="GM" >Gambia</option>
+					<option value="GE" >Georgia</option>
+					<option value="DE" >Germany</option>
+					<option value="GH" >Ghana</option>
+					<option value="GI" >Gibraltar</option>
+					<option value="GR" >Greece</option>
+					<option value="GL" >Greenland</option>
+					<option value="GD" >Grenada</option>
+					<option value="GP" >Guadeloupe</option>
+					<option value="GU" >Guam</option>
+					<option value="GT" >Guatemala</option>
+					<option value="GG" >Guernsey</option>
+					<option value="GN" >Guinea</option>
+					<option value="GW" >Guinea-Bissau</option>
+					<option value="GY" >Guyana</option>
+					<option value="HT" >Haiti</option>
+					<option value="HM" >Heard Island And Mcdonald Islands</option>
+					<option value="VA" >Holy See (Vatican City State)</option>
+					<option value="HN" >Honduras</option>
+					<option value="HK" >Hong Kong</option>
+					<option value="HU" >Hungary</option>
+					<option value="IS" >Iceland</option>
+					<option value="IN" >India</option>
+					<option value="ID" >Indonesia</option>
+					<option value="IR" >Iran, Islamic Republic Of</option>
+					<option value="IQ" >Iraq</option>
+					<option value="IE" >Ireland</option>
+					<option value="IM" >Isle Of Man</option>
+					<option value="IL" >Israel</option>
+					<option value="IT" >Italy</option>
+					<option value="JM" >Jamaica</option>
+					<option value="JP" >Japan</option>
+					<option value="JE" >Jersey</option>
+					<option value="JO" >Jordan</option>
+					<option value="KZ" >Kazakhstan</option>
+					<option value="KE" >Kenya</option>
+					<option value="KI" >Kiribati</option>
+					<option value="KP" >Korea, Democratic People’s Republic Of</option>
+					<option value="KR" >Korea, Republic Of</option>
+					<option value="KW" >Kuwait</option>
+					<option value="KG" >Kyrgyzstan</option>
+					<option value="LA" >Lao People’s Democratic Republic</option>
+					<option value="LV" >Latvia</option>
+					<option value="LB" >Lebanon</option>
+					<option value="LS" >Lesotho</option>
+					<option value="LR" >Liberia</option>
+					<option value="LY" >Libya</option>
+					<option value="LI" >Liechtenstein</option>
+					<option value="LT" >Lithuania</option>
+					<option value="LU" >Luxembourg</option>
+					<option value="MO" >Macao</option>
+					<option value="MK" >Macedonia, The Former Yugoslav Republic Of</option>
+					<option value="MG" >Madagascar</option>
+					<option value="MW" >Malawi</option>
+					<option value="MY" >Malaysia</option>
+					<option value="MV" >Maldives</option>
+					<option value="ML" >Mali</option>
+					<option value="MT" >Malta</option>
+					<option value="MH" >Marshall Islands</option>
+					<option value="MQ" >Martinique</option>
+					<option value="MR" >Mauritania</option>
+					<option value="MU" >Mauritius</option>
+					<option value="YT" >Mayotte</option>
+					<option value="MX" >Mexico</option>
+					<option value="FM" >Micronesia, Federated States Of</option>
+					<option value="MD" >Moldova, Republic Of</option>
+					<option value="MC" >Monaco</option>
+					<option value="MN" >Mongolia</option>
+					<option value="ME" >Montenegro</option>
+					<option value="MS" >Montserrat</option>
+					<option value="MA" >Morocco</option>
+					<option value="MZ" >Mozambique</option>
+					<option value="MM" >Myanmar</option>
+					<option value="NA" >Namibia</option>
+					<option value="NR" >Nauru</option>
+					<option value="NP" >Nepal</option>
+					<option value="NL" >Netherlands</option>
+					<option value="NC" >New Caledonia</option>
+					<option value="NZ" >New Zealand</option>
+					<option value="NI" >Nicaragua</option>
+					<option value="NE" >Niger</option>
+					<option value="NG" >Nigeria</option>
+					<option value="NU" >Niue</option>
+					<option value="NF" >Norfolk Island</option>
+					<option value="MP" >Northern Mariana Islands</option>
+					<option value="NO" >Norway</option>
+					<option value="OM" >Oman</option>
+					<option value="PK" >Pakistan</option>
+					<option value="PW" >Palau</option>
+					<option value="PS" >Palestine, State Of</option>
+					<option value="PA" >Panama</option>
+					<option value="PG" >Papua New Guinea</option>
+					<option value="PY" >Paraguay</option>
+					<option value="PE" >Peru</option>
+					<option value="PH" >Philippines</option>
+					<option value="PN" >Pitcairn</option>
+					<option value="PL" >Poland</option>
+					<option value="PT" >Portugal</option>
+					<option value="PR" >Puerto Rico</option>
+					<option value="QA" >Qatar</option>
+					<option value="RE" >Réunion</option>
+					<option value="RO" >Romania</option>
+					<option value="RU" >Russian Federation</option>
+					<option value="RW" >Rwanda</option>
+					<option value="BL" >Saint Barthélemy</option>
+					<option value="SH" >Saint Helena, Ascension And Tristan Da Cunha</option>
+					<option value="KN" >Saint Kitts And Nevis</option>
+					<option value="LC" >Saint Lucia</option>
+					<option value="MF" >Saint Martin (French Part)</option>
+					<option value="PM" >Saint Pierre And Miquelon</option>
+					<option value="VC" >Saint Vincent And The Grenadines</option>
+					<option value="WS" >Samoa</option>
+					<option value="SM" >San Marino</option>
+					<option value="ST" >Sao Tome And Principe</option>
+					<option value="SA" >Saudi Arabia</option>
+					<option value="SN" >Senegal</option>
+					<option value="RS" >Serbia</option>
+					<option value="SC" >Seychelles</option>
+					<option value="SL" >Sierra Leone</option>
+					<option value="SG" >Singapore</option>
+					<option value="SX" >Sint Maarten (Dutch Part)</option>
+					<option value="SK" >Slovakia</option>
+					<option value="SI" >Slovenia</option>
+					<option value="SB" >Solomon Islands</option>
+					<option value="SO" >Somalia</option>
+					<option value="ZA" >South Africa</option>
+					<option value="GS" >South Georgia And The South Sandwich Islands</option>
+					<option value="SS" >South Sudan</option>
+					<option value="ES" >Spain</option>
+					<option value="LK" >Sri Lanka</option>
+					<option value="SD" >Sudan</option>
+					<option value="SR" >Suriname</option>
+					<option value="SJ" >Svalbard And Jan Mayen</option>
+					<option value="SZ" >Swaziland</option>
+					<option value="SE" >Sweden</option>
+					<option value="CH" >Switzerland</option>
+					<option value="SY" >Syrian Arab Republic</option>
+					<option value="TW" >Taiwan, Province Of China</option>
+					<option value="TJ" >Tajikistan</option>
+					<option value="TZ" >Tanzania, United Republic Of</option>
+					<option value="TH" >Thailand</option>
+					<option value="TL" >Timor-Leste</option>
+					<option value="TG" >Togo</option>
+					<option value="TK" >Tokelau</option>
+					<option value="TO" >Tonga</option>
+					<option value="TT" >Trinidad And Tobago</option>
+					<option value="TN" >Tunisia</option>
+					<option value="TR" >Turkey</option>
+					<option value="TM" >Turkmenistan</option>
+					<option value="TC" >Turks And Caicos Islands</option>
+					<option value="TV" >Tuvalu</option>
+					<option value="UG" >Uganda</option>
+					<option value="UA" >Ukraine</option>
+					<option value="AE" >United Arab Emirates</option>
+					<option value="GB" >United Kingdom</option>
+					<option value="US"  selected="selected" >United States</option>
+					<option value="UM" >United States Minor Outlying Islands</option>
+					<option value="UY" >Uruguay</option>
+					<option value="UZ" >Uzbekistan</option>
+					<option value="VU" >Vanuatu</option>
+					<option value="VE" >Venezuela, Bolivarian Republic Of</option>
+					<option value="VN" >Viet Nam</option>
+					<option value="VG" >Virgin Islands, British</option>
+					<option value="VI" >Virgin Islands, U.S.</option>
+					<option value="WF" >Wallis And Futuna</option>
+					<option value="EH" >Western Sahara</option>
+					<option value="YE" >Yemen</option>
+					<option value="ZM" >Zambia</option>
+					<option value="ZW" >Zimbabwe</option>
+				</select></div>
+		</div>
+		</div>
+
+			</div>
+				<div class="form_row">
+		<label for="BillingZipCode" class=" billingzipcode">Zip:</label>
+		<input name="BillingZipCode" id="BillingZipCode" type="text" value="" [(ngModel)]="user.zip" class=" billingzipcode" autocomplete="off" />		</div>
+				<div class="form_row">
+		<label for="EmailAddress" class=" emailaddress">Email:</label>
+		<input name="EmailAddress" id="EmailAddress" type="text" value="" [(ngModel)]="user.email" class=" emailaddress" autocomplete="off" />		</div>
+				<div class="form_row">
+		<label for="PhoneNumber" class=" phonenumber">Phone:</label>
+		<input name="PhoneNumber" id="PhoneNumber" type="text" value="" [(ngModel)]="user.phone" class=" phonenumber" autocomplete="off" />		</div>
+			</fieldset><fieldset>
+	<legend>Make My Donation Specifically for a Selected Cause</legend>
+<div class="styled-select"><select name="c_Gift_Designation" id="c_Gift_Designation" [(ngModel)]="user.designation" class=" c_gift_designation">
+					<option value="General Support" >General Support</option>
+				</select></div>
+		</fieldset>
+
+<fieldset>
+			<div class="dp-radiobuttons inline amount_TransactionAmount">
+		<div class="radiogroup inline amount_TransactionAmount"><span class="cont inline amount_TransactionAmount 10 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="10" class="inline amount_TransactionAmount 10 _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount 10 _transactionamountdonation rb ">$10</label>
+		</span><span class="cont inline amount_TransactionAmount 25 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="25" [(ngModel)]="user.amount" class="inline amount_TransactionAmount 25 _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount 25 _transactionamountdonation rb ">$25</label>
+		</span><span class="cont inline amount_TransactionAmount 50 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="50" [(ngModel)]="user.amount" class="inline amount_TransactionAmount 50 _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount 50 _transactionamountdonation rb ">$50</label>
+		</span><span class="cont inline amount_TransactionAmount 100 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="100" [(ngModel)]="user.amount" class="inline amount_TransactionAmount 100 _transactionamountdonation"  checked="checked"  /><label for="" class="radio inline amount_TransactionAmount 100 _transactionamountdonation rb ">$100</label>
+		</span><span class="cont inline amount_TransactionAmount 500 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="500" [(ngModel)]="user.amount" class="inline amount_TransactionAmount 500 _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount 500 _transactionamountdonation rb ">$500</label>
+		</span><span class="cont inline amount_TransactionAmount 1000 _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="1000" [(ngModel)]="user.amount" class="inline amount_TransactionAmount 1000 _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount 1000 _transactionamountdonation rb ">$1,000</label>
+		</span><span class="cont inline amount_TransactionAmount other _transactionamountdonation"><input type="radio" name="_TransactionAmount[Donation]" value="other" class="inline amount_TransactionAmount other _transactionamountdonation"  /><label for="" class="radio inline amount_TransactionAmount other _transactionamountdonation rb "><input name="_TransactionAmount[Donation_other]" id="_TransactionAmount[Donation_other]" type="text" value="Other"  [(ngModel)]="user.amount" class="inline amount_TransactionAmount short dp_other_amount _TransactionAmount[Donation] _transactionamountdonation_other" autocomplete="off" />		<script type="text/javascript" >
+		  jQuery(document).ready(function($) {
+
+			  other_init($("#_TransactionAmount\\[Donation_other\\]"), "_TransactionAmountDonation");
+
+		  });
+
+		</script>
+		</label>
+		</span>		</div></div>
+		<div class="clear"></div>
+	<div class="dp_checkbox 1 dp_recurring_payments">
+			<input name="dp_recurring_payments" id="dp_recurring_payments" type="checkbox" value="monthly" [(ngModel)]="user.gift" class="1 dp_recurring_payments" />
+		<label for="dp_recurring_payments" class="1 dp_recurring_payments dp_recurring_payments">Make this a monthly gift (you can cancel it at anytime)</label>
+		</div>
+</fieldset>
+		<div id="payment_container">
+		<div id="dp_processing_container" class="processing_container single">
+
+					<fieldset class="cardinformation">
+			<legend>Credit Card</legend>
+          
+            <!-- CCK 6/5/15: hidden card type field required for custom fields -->
+			<div>
+				<input name="CardType" id="CardType" type="hidden" value=""/>			</div>
+
+            <!-- begin card number field -->
+			<div>
+				<label for="CardNumber" class=" cardnumber">Card Number:</label>
+		<input name="CardNumber" id="CardNumber" type="text" value="" [(ngModel)]="user.cardNumber" class=" cardnumber" autocomplete="off" />			</div>
+            <!-- end card number field -->
+
+                        <!-- begin card type images -->
+            <label><div class="card_images_spacer"></div></label>
+            <div class="card_images">
+                <img src="https://secure.donationpay.org/static/v1.2/images/card_visa.png"/>
+                <img src="https://secure.donationpay.org/static/v1.2/images/card_mastercard.png"/>
+                <img src="https://secure.donationpay.org/static/v1.2/images/card_discover.png"/>
+                <img src="https://secure.donationpay.org/static/v1.2/images/card_amex.png"/>
+            </div>
+            <!-- end card type images -->
+            
+			<div>
+				<label for="ExpirationDateMMYY" class=" expirationdatemmyy">Expiration Date:</label>
+						<div class="styled-select"><select name="ExpirationDateMM" [(ngModel)]="user.expiryMonth" id="ExpirationDateMM" class=" expirationdatemm">
+					<option value="01" >Jan</option>
+					<option value="02" >Feb</option>
+					<option value="03" >Mar</option>
+					<option value="04" >Apr</option>
+					<option value="05" >May</option>
+					<option value="06" >Jun</option>
+					<option value="07" >Jul</option>
+					<option value="08" >Aug</option>
+					<option value="09" >Sep</option>
+					<option value="10" >Oct</option>
+					<option value="11" >Nov</option>
+					<option value="12" >Dec</option>
+				</select></div>
+		<div class="styled-select"><select name="ExpirationDateYY" [(ngModel)]="user.expiryYear" id="ExpirationDateYY" class=" expirationdateyy">
+					<option value="20" >2020</option>
+					<option value="21" >2021</option>
+					<option value="22" >2022</option>
+					<option value="23" >2023</option>
+					<option value="24" >2024</option>
+					<option value="25" >2025</option>
+					<option value="26" >2026</option>
+					<option value="27" >2027</option>
+					<option value="28" >2028</option>
+					<option value="29" >2029</option>
+					<option value="30" >2030</option>
+				</select></div>
+									</div>
+			<div>
+				
+				<label for="CVV2" class=" cvv2">CVV: (<a class="jquery_tooltip">?</a><div class="tooltip">
+				<div class="tooltip_container tooltip_credit tooltip_credit_amex">
+				<p>For <strong>Visa</strong>, <strong>MasterCard</strong>, and <strong>Discover</strong> cards, the card code is the last 3 digit number located on the back of your card on or above your signature line.</p>
+				<p><img src="https://secure.donationpay.org/static/v1.2/images/cvvp3.gif" width="379" height="82" /></p>
+				<p>For <strong>American Express</strong>, it&rsquo;s a 4 digit number that appears on the front of your card, above and either on the left or right of the card number (see below).</p>
+				<p><img src="https://secure.donationpay.org/static/v1.2/images/cvvp4.gif" width="379" height="98" /></p>
+				</div>
+				</div>)</label>
+		<input name="CVV2" id="CVV2" type="text" value="" [(ngModel)]="user.cvv" class=" cvv2" autocomplete="off" />			</div>
+		</fieldset>
+				</div>
+		</div>
+		<div class="clear"></div>
+	
+
+<fieldset>
+
+<div class="dp_checkbox  c_employee">
+			<input name="c_Employee" id="c_Employee" type="checkbox" value="Yes Employee" class=" c_employee" />
+		<label for="c_Employee" class=" c_employee c_employee">I'm a Western Union Employee</label>
+		</div><div class="clear"></div>
+	<p>
+		<span style="color: green;">Western Union employees must check this
+			box for the Western Union Foundation to match your donation. </span>
+	</p>
+	<div class="clear"></div>
+	<label for="c_Employee_ID" class=" c_employee_id">Western Union ID:</label>
+		<input name="c_Employee_ID" id="c_Employee_ID" type="text" value="" class=" c_employee_id" autocomplete="off" /><div class="dp_checkbox  c_anonymous">
+			<input name="c_Anonymous" id="c_Anonymous" type="checkbox" value="true" class=" c_anonymous" />
+		<label for="c_Anonymous" class=" c_anonymous c_anonymous">Please list me as an anonymous donor.</label>
+		</div></fieldset>
+<fieldset>
+	<div class="g-recaptcha"
+		data-sitekey="6LdUCngUAAAAAMYtJmihIgg1OBs9NkcAhRzVHON7"></div>
+</fieldset>
+
+<input type="submit" value="Donate Now" (click)="displayObject()"/>
+<input name="nonce" id="nonce" type="hidden" value="a6c8c23543991d6c99e55f07656d41e79a69125e227507ca3d958225a191145e"/><input name="timestamp" id="timestamp" type="hidden" value="1589702906.0262"/><input name="dp_r" id="dp_r" type="hidden" value="LV9v3qkG+q82hDbfTannug==QeQrX65Wt+2cH5eBh0UkvScvP+dPbl92kLJ8ogT9i2yy8omW+g8Mx4CbMLT53c1VveFeauoDF+fyVDOdAPzmUvqbBYsfMij8Frsd0rFih/r6pVSsE+Sot7P8cHUfnZHtpZ3S3s7JXbLzE7Y+Ous6hQ=="/></form>
+
+<!-- DonationPay end -->
+
+</div>
+		</div>
+	</section>
+	<!-- Blockquote Flexible Block --> <!-- Numbers Block --> </main>
+
+</html>
+
